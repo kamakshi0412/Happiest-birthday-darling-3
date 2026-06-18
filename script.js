@@ -236,7 +236,7 @@ break;
         </p>
 
         <button onclick="quizWrong()">
-        Dramaqueen
+         Dramaqueen
         </button>
 
         <button onclick="quizCorrect()">
@@ -244,7 +244,7 @@ break;
         </button>
 
         <button onclick="quizWrong()">
-        Darling
+         Darling
         </button>
 
         </div>
