@@ -2,7 +2,7 @@ function checkPassword(){
 
 const password =
 document.getElementById("birthdayPassword").value;
-
+ 
 if(password === "23062022"){
 
 document.getElementById("welcomeScreen")
