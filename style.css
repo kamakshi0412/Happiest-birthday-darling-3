@@ -371,25 +371,61 @@ font-size:6rem;
 }
 
 } 
-.hearts::before,
-.hearts::after{
-content:"💖";
+.hearts{
 position:fixed;
-font-size:30px;
-animation:floatHeart 10s linear infinite;
-opacity:.5;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:999;
 }
 
-.hearts::after{
-left:80%;
-animation-delay:4s;
+.hearts span{
+position:absolute;
+bottom:-100px;
+font-size:30px;
+animation:floatHeart 10s linear infinite;
+}
+
+.hearts span:nth-child(1){
+left:10%;
+animation-duration:8s;
+}
+
+.hearts span:nth-child(2){
+left:30%;
+animation-duration:12s;
+}
+
+.hearts span:nth-child(3){
+left:50%;
+animation-duration:9s;
+}
+
+.hearts span:nth-child(4){
+left:70%;
+animation-duration:11s;
+}
+
+.hearts span:nth-child(5){
+left:90%;
+animation-duration:10s;
 }
 
 @keyframes floatHeart{
 0%{
-transform:translateY(100vh);
+transform:translateY(0);
+opacity:0;
 }
+
+20%{
+opacity:1;
+}
+
 100%{
 transform:translateY(-120vh);
+opacity:0;
 }
-} 
+}
