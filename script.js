@@ -96,26 +96,32 @@ function openBox(number){
 
         // BOX 3
 
-        case 3:
+        case 3: 
+            
+modalBody.innerHTML = `
+<h2>🎵 Lyrics That Remind Me Of You</h2>
 
-        modalBody.innerHTML = `
-        <h2>🎵 Your Favorite Song</h2>
+<p>
+Every lyric on this page reminds me of you,
+our memories and how special you are to me. ❤️
+</p>
 
-        <p>
-        Till I Found You
-        </p>
+<img src="lyrics-page.jpg"
+style="
+width:100%;
+max-width:700px;
+border-radius:20px;
+margin-top:15px;
+box-shadow:0 8px 25px rgba(0,0,0,0.15);
+">
 
-        <audio controls autoplay style="width:100%;margin-top:20px;">
-            <source src="music/till-i-found-you.mp3">
-        </audio>
+<br><br>
 
-        <br><br>
-
-        <button onclick="finishBox(3)">
-        Unlock Next Gift ❤️
-        </button>
-        `;
-        break;
+<button onclick="finishBox(3)">
+Unlock Next Gift ❤️
+</button>
+`;
+break;
 
         // BOX 4
 
