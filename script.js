@@ -54,10 +54,10 @@ function openBox(number){
 
         <div class="gallery">
 
-            <img src="photos/childhood1.jpg">
-            <img src="photos/childhood2.jpg">
-            <img src="photos/childhood3.jpg">
-            <img src="photos/childhood4.jpg">
+            <img src="childhood1.JPG">
+            <img src="childhood2.JPG">
+            <img src="childhood3.JPG">
+            <img src="childhood4.jpg">
 
         </div>
 
@@ -149,12 +149,12 @@ break;
 
         <div class="gallery">
 
-            <img src="photos/memory1.jpg">
-            <img src="photos/memory2.jpg">
-            <img src="photos/memory3.jpg">
-            <img src="photos/memory4.jpg">
-            <img src="photos/memory5.jpg">
-            <img src="photos/memory6.jpg">
+            <img src="memory1.jpg">
+            <img src="memory2.jpg">
+            <img src="memory3.jpg">
+            <img src="memory4.jpg">
+            <img src="memory5.jpg">
+            <img src="memory6.jpg">
 
         </div>
 
@@ -204,14 +204,14 @@ break;
 
         <div class="gallery">
 
-            <img src="photos/funny1.jpg">
-            <img src="photos/funny2.jpg">
-            <img src="photos/funny3.jpg">
+            <img src="funny1.jpg">
+            <img src="funny2.jpg">
+            <img src="funny3.jpg">
 
         </div>
 
         <video controls>
-            <source src="videos/funny.mp4">
+            <source src="funny.mp4">
         </video>
 
         <br>
@@ -260,7 +260,7 @@ break;
 
         <video controls autoplay>
 
-            <source src="videos/birthday.mp4">
+            <source src="birthday.mp4">
 
         </video>
 
