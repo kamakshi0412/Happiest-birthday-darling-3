@@ -1,14 +1,31 @@
-function startAdventure() {
-    document.getElementById("welcomeScreen").classList.add("hidden");
-    document.getElementById("mainContent").classList.remove("hidden");
+function checkPassword(){
 
-    const music = document.getElementById("bgMusic");
-    music.play().catch(() => {});
+const password =
+document.getElementById("birthdayPassword").value;
+
+if(password === "04122008"){
+
+document.getElementById("welcomeScreen")
+.classList.add("hidden");
+
+document.getElementById("mainContent")
+.classList.remove("hidden");
+
+const music =
+document.getElementById("bgMusic");
+
+music.play().catch(()=>{});
+
+}
+else{
+
+document.getElementById("errorMessage")
+.innerHTML =
+"❌ Wrong answer. Try again ❤️";
+
 }
 
-const modal = document.getElementById("modal");
-const modalBody = document.getElementById("modalBody");
-
+} 
 function closeModal() {
     modal.classList.add("hidden");
 }
