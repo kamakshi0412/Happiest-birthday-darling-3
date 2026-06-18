@@ -3,7 +3,7 @@ function checkPassword(){
 const password =
 document.getElementById("birthdayPassword").value;
 
-if(password === "04122008"){
+if(password === "23062022"){
 
 document.getElementById("welcomeScreen")
 .classList.add("hidden");
