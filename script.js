@@ -106,7 +106,7 @@ Every lyric on this page reminds me of you,
 our memories and how special you are to me. ❤️
 </p>
 
-<img src="lyrics-page.jpg"
+<img src="lyrics-page.jpg.jpg">
 style="
 width:100%;
 max-width:700px;
@@ -215,19 +215,19 @@ break;
         <h2>❓ Friendship Quiz</h2>
 
         <p>
-        What does Nikki call you the most?
+        What does I call you the most?
         </p>
 
         <button onclick="quizWrong()">
-        Drama Queen
+            Nautanki
         </button>
 
         <button onclick="quizCorrect()">
-        Kani
+          Darling
         </button>
 
         <button onclick="quizWrong()">
-        Miss Birthday
+        Pagal aurat
         </button>
 
         </div>
