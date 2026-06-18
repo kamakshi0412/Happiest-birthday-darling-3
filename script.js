@@ -232,19 +232,19 @@ break;
         <h2>❓ Friendship Quiz</h2>
 
         <p>
-        What does I call you the most?
+        What name do I use the most to tease you?
         </p>
 
         <button onclick="quizWrong()">
-            Nautanki
+        Dramaqueen
         </button>
 
         <button onclick="quizCorrect()">
-          Darling
+          Cutie
         </button>
 
         <button onclick="quizWrong()">
-        Pagal aurat
+        Darling
         </button>
 
         </div>
