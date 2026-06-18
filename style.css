@@ -1,0 +1,373 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#fffdfd,#fff5f8,#fef9ff);
+min-height:100vh;
+overflow-x:hidden;
+color:#444;
+}
+
+/* Welcome Screen */
+
+#welcomeScreen{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+background:
+linear-gradient(rgba(255,255,255,0.75),
+rgba(255,255,255,0.75)),
+url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=1200&q=80');
+background-size:cover;
+background-position:center;
+}
+
+.welcome-card{
+background:white;
+padding:40px;
+border-radius:30px;
+text-align:center;
+max-width:500px;
+box-shadow:0 10px 30px rgba(0,0,0,.12);
+animation:float 3s ease-in-out infinite;
+}
+
+.welcome-card h1{
+font-family:'Dancing Script',cursive;
+font-size:3rem;
+color:#e88ab2;
+margin-bottom:15px;
+}
+
+.welcome-card p{
+font-size:1rem;
+line-height:1.7;
+margin-bottom:25px;
+}
+
+.welcome-card button{
+padding:14px 30px;
+border:none;
+border-radius:50px;
+background:#f6a6c1;
+color:white;
+font-size:1rem;
+cursor:pointer;
+transition:.3s;
+}
+
+.welcome-card button:hover{
+transform:scale(1.05);
+}
+
+/* Header */
+
+header{
+text-align:center;
+padding:40px 20px;
+}
+
+header h1{
+font-family:'Dancing Script',cursive;
+font-size:3rem;
+color:#e58db3;
+}
+
+header p{
+margin-top:10px;
+}
+
+/* Gift Grid */
+
+.gift-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+padding:30px;
+max-width:1200px;
+margin:auto;
+}
+
+/* Gift Box */
+
+.gift-box{
+background:white;
+border-radius:25px;
+padding:25px;
+text-align:center;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.gift-box:hover{
+transform:translateY(-6px);
+}
+
+.gift-top{
+font-size:4rem;
+margin-bottom:10px;
+}
+
+.gift-box h3{
+color:#e88ab2;
+margin-bottom:10px;
+}
+
+.gift-box p{
+margin-bottom:15px;
+}
+
+.gift-box button{
+padding:10px 25px;
+border:none;
+border-radius:50px;
+cursor:pointer;
+background:#f4aac3;
+color:white;
+font-weight:600;
+}
+
+.gift-box button:hover{
+opacity:.9;
+}
+
+.locked{
+opacity:.55;
+pointer-events:none;
+}
+
+.unlocked{
+opacity:1;
+pointer-events:auto;
+}
+
+/* Modal */
+
+.modal{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.6);
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+z-index:999;
+}
+
+.modal-content{
+background:white;
+width:90%;
+max-width:900px;
+max-height:90vh;
+overflow-y:auto;
+padding:30px;
+border-radius:25px;
+position:relative;
+animation:pop .4s ease;
+}
+
+.close{
+position:absolute;
+right:20px;
+top:15px;
+font-size:2rem;
+cursor:pointer;
+color:#777;
+}
+
+/* Gallery */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+margin-top:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+}
+
+/* Videos */
+
+video{
+width:100%;
+border-radius:15px;
+margin-top:15px;
+}
+
+/* Letter */
+
+.letter{
+line-height:1.9;
+font-size:1.05rem;
+padding:10px;
+}
+
+/* Secret Message */
+
+.secret{
+background:#fff4f8;
+padding:25px;
+border-radius:20px;
+text-align:center;
+font-size:1.1rem;
+}
+
+/* Quiz */
+
+.quiz{
+padding:20px;
+text-align:center;
+}
+
+.quiz h2{
+margin-bottom:20px;
+}
+
+.quiz button{
+margin:10px;
+padding:10px 20px;
+border:none;
+border-radius:50px;
+background:#f6aac6;
+color:white;
+cursor:pointer;
+}
+
+/* Cake */
+
+.cake-wrapper{
+text-align:center;
+padding:30px;
+}
+
+.cake{
+font-size:8rem;
+cursor:pointer;
+animation:bounce 1.5s infinite;
+}
+
+.cake-text{
+margin-top:15px;
+font-size:1.1rem;
+}
+
+/* Final Page */
+
+.final-page{
+text-align:center;
+padding:30px;
+}
+
+.final-page h1{
+font-family:'Dancing Script',cursive;
+font-size:4rem;
+color:#e88ab2;
+margin-bottom:20px;
+}
+
+.final-page p{
+font-size:1.15rem;
+line-height:2;
+}
+
+/* Confetti */
+
+#confettiContainer{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:2000;
+}
+
+.confetti{
+position:absolute;
+width:10px;
+height:10px;
+border-radius:50%;
+animation:fall 4s linear forwards;
+}
+
+/* Utility */
+
+.hidden{
+display:none;
+}
+
+/* Animations */
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
+
+@keyframes pop{
+from{
+transform:scale(.7);
+opacity:0;
+}
+to{
+transform:scale(1);
+opacity:1;
+}
+}
+
+@keyframes bounce{
+0%{transform:translateY(0);}
+50%{transform:translateY(-12px);}
+100%{transform:translateY(0);}
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px);
+}
+100%{
+transform:translateY(100vh);
+opacity:0;
+}
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header h1{
+font-size:2.3rem;
+}
+
+.welcome-card h1{
+font-size:2.2rem;
+}
+
+.final-page h1{
+font-size:2.5rem;
+}
+
+.gallery img{
+height:180px;
+}
+
+.cake{
+font-size:6rem;
+}
+
+}

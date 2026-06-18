@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Kanishka ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="music/till-i-found-you.mp3" type="audio/mpeg">
+</audio>
+
+<div id="welcomeScreen">
+
+    <div class="welcome-card">
+
+        <h1>🌸 Happy Birthday Kanishka 🌸</h1>
+
+        <p>
+            A special treasure hunt made with love,
+            memories and lots of surprises.
+        </p>
+
+        <button onclick="startAdventure()">
+            Start Adventure ❤️
+        </button>
+
+    </div>
+
+</div>
+
+<div id="mainContent" class="hidden">
+
+    <header>
+        <h1>🎁 Kanishka's Birthday Treasure Hunt 🎁</h1>
+        <p>Unlock each surprise to reveal the next one.</p>
+    </header>
+
+    <section class="gift-grid">
+
+        <!-- BOX 1 -->
+
+        <div class="gift-box unlocked" id="box1">
+
+            <div class="gift-top">
+                🎁
+            </div>
+
+            <h3>Box 1</h3>
+
+            <p>Childhood Photos</p>
+
+            <button onclick="openBox(1)">
+                Open
+            </button>
+
+        </div>
+
+        <!-- BOX 2 -->
+
+        <div class="gift-box locked" id="box2">
+
+            <div class="gift-top">
+                🔒
+            </div>
+
+            <h3>Box 2</h3>
+
+            <p>Birthday Letter</p>
+
+            <button onclick="openBox(2)">
+                Open
+            </button>
+
+        </div>
+
+        <!-- BOX 3 -->
+
+        <div class="gift-box locked" id="box3">
+
+            <div class="gift-top">
+                🔒
+            </div>
+
+            <h3>Box 3</h3>
+
+            <p>Favorite Song</p>
+
+            <button onclick="openBox(3)">
+                Open
+            </button>
+
+        </div>
+
+        <!-- BOX 4 -->
+
+        <div class="gift-box locked" id="box4">
+
+            <div class="gift-top">
+                🔒
+            </div>
+
+            <h3>Box 4</h3>
+
+            <p>Our Memories</p>
+
+            <button onclick="openBox(4)">
+                Open
+            </button>
+
+        </div>
+
+        <!-- BOX 5 -->
+
+        <div class="gift-box locked" id="box5">
+
+            <div class="gift-top">
+                🔒
+            </div>
+
+            <h3>Box 5</h3>
+
+            <p>Secret Message</p>
+
+            <button onclick="openBox(5)">
+                Open
+            </button>
+
+        </div>
+
+        <!-- BOX 6 -->
+
+        <div class="gift-box locked" id="box6">
+
+            <div class="gift-top">
+                🔒
+            </div>
+
+            <h3>Box 6</h3>
+
+            <p>Funny Moments</p>
+
+            <button onclick="openBox(6)">
+                Open
+            </button>
+
+        </div>
+
+        <!-- BOX 7 -->
+
+        <div class="gift-box locked" id="box7">
+
+            <div class="gift-top">
+                🔒
+            </div>
+
+            <h3>Box 7</h3>
+
+            <p>Quiz Time</p>
+
+            <button onclick="openBox(7)">
+                Open
+            </button>
+
+        </div>
+
+        <!-- BOX 8 -->
+
+        <div class="gift-box locked" id="box8">
+
+            <div class="gift-top">
+                🔒
+            </div>
+
+            <h3>Box 8</h3>
+
+            <p>Birthday Video</p>
+
+            <button onclick="openBox(8)">
+                Open
+            </button>
+
+        </div>
+
+        <!-- BOX 9 -->
+
+        <div class="gift-box locked" id="box9">
+
+            <div class="gift-top">
+                🔒
+            </div>
+
+            <h3>Box 9</h3>
+
+            <p>Birthday Cake</p>
+
+            <button onclick="openBox(9)">
+                Open
+            </button>
+
+        </div>
+
+        <!-- BOX 10 -->
+
+        <div class="gift-box locked" id="box10">
+
+            <div class="gift-top">
+                🔒
+            </div>
+
+            <h3>Box 10</h3>
+
+            <p>Final Surprise</p>
+
+            <button onclick="openBox(10)">
+                Open
+            </button>
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- MODAL -->
+
+<div id="modal" class="modal hidden">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">
+            ×
+        </span>
+
+        <div id="modalBody"></div>
+
+    </div>
+
+</div>
+
+<!-- CONFETTI -->
+
+<div id="confettiContainer"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
