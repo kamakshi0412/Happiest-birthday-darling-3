@@ -18,20 +18,30 @@
 
 <div id="welcomeScreen">
 
-    <div class="welcome-card">
+ <div class="welcome-card">
 
-        <h1>🌸 Happy Birthday Kanishka 🌸</h1>
+<h1>🔐 Secret Birthday Adventure</h1>
 
-        <p>
-            A special treasure hunt made with love,
-            memories and lots of surprises.
-        </p>
+<p>
+Before entering, answer one question...
+</p>
 
-        <button onclick="startAdventure()">
-            Start Adventure ❤️
-        </button>
+<h3>Date when you were most happy?</h3>
 
-    </div>
+<input
+type="password"
+id="birthdayPassword"
+placeholder="DDMMYYYY">
+
+<br><br>
+
+<button onclick="checkPassword()">
+Unlock Adventure ❤️
+</button>
+
+<p id="errorMessage"></p>
+
+</div> 
 
 </div>
 
